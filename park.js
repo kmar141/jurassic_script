@@ -3,7 +3,7 @@ var Park = function(){
 };
 
 Park.prototype = {
-  addDinosaur: function(account){
+  addDinosaur: function(dinosaur){
     this.dinosaurs.push(dinosaur);
   },
 }

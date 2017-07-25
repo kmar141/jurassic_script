@@ -8,12 +8,12 @@ describe("Park", function(){
   var raptorjesus = new Dinosaur("Raptor Jesus", 3);
   var park;
 
-beforeEach(function(){
-  park = new Park();
-  park.addDinosaur(velociraptor);
-  park.addDinosaur(triceratops);
-  park.addDinosaur(raptorjesus);
-});
+// beforeEach(function(){
+//   park = new Park();
+//   park.addDinosaur(velociraptor);
+//   park.addDinosaur(triceratops);
+//   park.addDinosaur(raptorjesus);
+// });
 
 it('should start as an empty park', function(){
   assert.strictEqual(park.dinosaurs.length, 0);
@@ -22,7 +22,7 @@ it('should start as an empty park', function(){
 
 
 
-})
+});
 
 
 
