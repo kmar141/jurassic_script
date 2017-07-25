@@ -26,6 +26,16 @@ it('should be able to add a dinosaur', function(){
   assert.strictEqual(emptyPark.dinosaurs.length, 1);
 });
 
+it('should be able to remove all dinosaurs of a particular type', function(){
+  park.removeByType("Raptor Jesus");
+  assert.strictEqual(park.dinosaurs.length, 2);
+});
+
+it('should be able to get all dinosaurs with 2 or more offspring', function(){
+  park.findByOffspring();
+  assert.strictEqual(2, park.dinosaurs.length);
+});
+
 
 });
 
